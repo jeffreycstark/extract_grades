@@ -52,15 +52,26 @@ def extract_class_code_from_filename(filename):
     """
     Extract class code from filename.
     Class codes look like: EHSS-*, GESL-*, IEAP-*, etc.
-    Returns class code if found, None otherwise.
+    Also handles space variations like: EHSS 8, GESL 205A
+    Returns class code if found (normalized with hyphen), None otherwise.
     """
-    # Pattern: 4 uppercase letters, hyphen, digits (and possibly letters)
-    # Examples: EHSS-101, GESL-205A, IEAP-1234
-    pattern = r'[A-Z]{4}-[A-Z0-9]+'
+    filename_upper = filename.upper()
 
-    match = re.search(pattern, filename.upper())
+    # Pattern 1: 4 uppercase letters, hyphen, digits (and possibly letters)
+    # Examples: EHSS-101, GESL-205A, IEAP-1234
+    pattern_hyphen = r'[A-Z]{4}-[A-Z0-9]+'
+    match = re.search(pattern_hyphen, filename_upper)
     if match:
         return match.group(0)
+
+    # Pattern 2: 4 uppercase letters, space, digits (and possibly letters)
+    # Examples: EHSS 8, GESL 205A, IEAP 1234
+    # Convert space to hyphen for consistency
+    pattern_space = r'[A-Z]{4} [A-Z0-9]+'
+    match = re.search(pattern_space, filename_upper)
+    if match:
+        # Replace space with hyphen
+        return match.group(0).replace(' ', '-')
 
     return None
 
@@ -449,7 +460,7 @@ def main():
     parser.add_argument(
         'input',
         nargs='?',
-        default=os.path.expanduser('~/Documents/IFL_CONSOLIDATED'),
+        default=os.path.expanduser('~/Documents/CONSOLIDATE-IFL-GRADES'),
         help='Input xlsx file or directory (default: ~/Documents/IFL_CONSOLIDATED)'
     )
     parser.add_argument(
