@@ -1,0 +1,649 @@
+================================================================================
+GRADE UPDATE AUDIT REPORT - DRY RUN
+Generated: 2025-12-09 11:12:42
+================================================================================
+
+SUMMARY:
+  Total Files Processed: 365
+  Successful Files: 236
+  Failed Files: 129
+
+  Total Students in CSVs: 20274
+  Students Matched in DB: 9180
+  Students Updated: 0
+  Database Records Updated: 0
+
+  Overall Match Rate: 45.3%
+
+================================================================================
+SUCCESSFUL FILES:
+================================================================================
+  ✓ grades_extract_2021T2T2E_EHSS-01.csv               | EHSS-01      | 2021T2T2E       |  27/ 27 students (100.0%)
+  ✓ grades_extract_2021T2T2E_EHSS-02.csv               | EHSS-02      | 2021T2T2E       |  41/ 44 students ( 93.2%)
+  ✓ grades_extract_2021T2T2E_EHSS-03.csv               | EHSS-03      | 2021T2T2E       |  13/ 14 students ( 92.9%)
+  ✓ grades_extract_2021T2T2E_EHSS-04.csv               | EHSS-04      | 2021T2T2E       |  16/ 16 students (100.0%)
+  ✓ grades_extract_2021T2T2E_EHSS-05.csv               | EHSS-05      | 2021T2T2E       |  27/ 29 students ( 93.1%)
+  ✓ grades_extract_2021T2T2E_EHSS-06.csv               | EHSS-06      | 2021T2T2E       |   4/  5 students ( 80.0%)
+  ✓ grades_extract_2021T2T2E_EHSS-07.csv               | EHSS-07      | 2021T2T2E       |  22/ 23 students ( 95.7%)
+  ✓ grades_extract_2021T2T2E_EHSS-08.csv               | EHSS-08      | 2021T2T2E       |   6/  7 students ( 85.7%)
+  ✓ grades_extract_2021T2T2E_EHSS-09.csv               | EHSS-09      | 2021T2T2E       |  18/ 18 students (100.0%)
+  ✓ grades_extract_2021T2T2E_EHSS-11.csv               | EHSS-11      | 2021T2T2E       |  18/ 18 students (100.0%)
+  ✓ grades_extract_2021T2T2E_IEAP-1.csv                | IEAP-1       | 2021T2T2E       |  39/ 39 students (100.0%)
+  ✓ grades_extract_2021T2T2E_IEAP-2.csv                | IEAP-2       | 2021T2T2E       |  51/ 52 students ( 98.1%)
+  ✓ grades_extract_2021T2T2E_IEAP-4.csv                | IEAP-4       | 2021T2T2E       |  34/ 36 students ( 94.4%)
+  ✓ grades_extract_2021T2T2E_IEAP-BEG.csv              | IEAP-BEG     | 2021T2T2E       |  41/ 41 students (100.0%)
+  ✓ grades_extract_2021T2T2E_IEAP-PRE.csv              | IEAP-PRE     | 2021T2T2E       |  10/ 11 students ( 90.9%)
+  ✓ grades_extract_2022AT3E_EHSS-01.csv                | EHSS-01      | 2022AT3E        |  99/102 students ( 97.1%)
+  ✓ grades_extract_2022AT3E_EHSS-03.csv                | EHSS-03      | 2022AT3E        | 173/250 students ( 95.1%)
+  ✓ grades_extract_2022AT3E_EHSS-04.csv                | EHSS-04      | 2022AT3E        |  79/134 students ( 89.8%)
+  ✓ grades_extract_2022AT3E_EHSS-05.csv                | EHSS-05      | 2022AT3E        |  72/105 students ( 97.3%)
+  ✓ grades_extract_2022AT3E_EHSS-06.csv                | EHSS-06      | 2022AT3E        |  13/ 26 students (100.0%)
+  ✓ grades_extract_2022AT3E_EHSS-08.csv                | EHSS-08      | 2022AT3E        |  38/ 54 students ( 95.0%)
+  ✓ grades_extract_2022AT3E_EHSS-09.csv                | EHSS-09      | 2022AT3E        |  24/ 24 students (100.0%)
+  ✓ grades_extract_2022AT3E_EHSS-10.csv                | EHSS-10      | 2022AT3E        |  30/ 30 students (100.0%)
+  ✓ grades_extract_2022AT3E_EHSS-12.csv                | EHSS-12      | 2022AT3E        |  17/ 17 students (100.0%)
+  ✓ grades_extract_2022AT3E_IEAP-1.csv                 | IEAP-1       | 2022AT3E        |  50/ 50 students (100.0%)
+  ✓ grades_extract_2022AT3E_IEAP-2.csv                 | IEAP-2       | 2022AT3E        |  59/ 93 students ( 85.5%)
+  ✓ grades_extract_2022AT3E_IEAP-3.csv                 | IEAP-3       | 2022AT3E        |  63/ 90 students ( 95.5%)
+  ✓ grades_extract_2022AT3E_IEAP-4.csv                 | IEAP-4       | 2022AT3E        |  41/ 54 students ( 93.2%)
+  ✓ grades_extract_2022T2T2E_EHSS-02.csv               | EHSS-02      | 2022T2T2E       |  76/ 77 students ( 98.7%)
+  ✓ grades_extract_2022T2T2E_EHSS-03.csv               | EHSS-03      | 2022T2T2E       |  47/ 48 students ( 97.9%)
+  ✓ grades_extract_2022T2T2E_EHSS-04.csv               | EHSS-04      | 2022T2T2E       |  32/ 33 students ( 97.0%)
+  ✓ grades_extract_2022T2T2E_EHSS-05.csv               | EHSS-05      | 2022T2T2E       |  13/ 13 students (100.0%)
+  ✓ grades_extract_2022T2T2E_EHSS-07.csv               | EHSS-07      | 2022T2T2E       |  12/ 13 students ( 92.3%)
+  ✓ grades_extract_2022T2T2E_EHSS-1.csv                | EHSS-1       | 2022T2T2E       |  48/ 49 students ( 98.0%)
+  ✓ grades_extract_2022T2T2E_EHSS-12.csv               | EHSS-12      | 2022T2T2E       |  11/ 11 students (100.0%)
+  ✓ grades_extract_2022T2T2E_IEAP-1.csv                | IEAP-1       | 2022T2T2E       |  25/ 26 students ( 96.2%)
+  ✓ grades_extract_2022T2T2E_IEAP-3.csv                | IEAP-3       | 2022T2T2E       |  12/ 12 students (100.0%)
+  ✓ grades_extract_2022T2T2E_PART-TIME.csv             | Pre-B2       | 2022T2T2E       |  19/ 23 students ( 82.6%)
+  ✓ grades_extract_2022T3E_EHSS-01.csv                 | EHSS-01      | 2022T3E         | 127/258 students ( 97.7%)
+  ✓ grades_extract_2022T3E_EHSS-02.csv                 | EHSS-02      | 2022T3E         |  52/104 students (100.0%)
+  ✓ grades_extract_2022T3E_EHSS-04.csv                 | EHSS-04      | 2022T3E         |  48/ 96 students (100.0%)
+  ✓ grades_extract_2022T3E_EHSS-05.csv                 | EHSS-05      | 2022T3E         |  56/120 students ( 91.8%)
+  ✓ grades_extract_2022T3E_EHSS-07.csv                 | EHSS-07      | 2022T3E         |  22/ 44 students (100.0%)
+  ✓ grades_extract_2022T3E_EHSS-08.csv                 | EHSS-08      | 2022T3E         |  31/ 67 students ( 88.6%)
+  ✓ grades_extract_2022T3E_EHSS-10.csv                 | EHSS-10      | 2022T3E         |  16/ 35 students ( 84.2%)
+  ✓ grades_extract_2022T3E_EHSS-12.csv                 | EHSS-12      | 2022T3E         |  24/ 49 students ( 96.0%)
+  ✓ grades_extract_2022T3E_IEAP-1.csv                  | IEAP-1       | 2022T3E         |  52/ 53 students ( 98.1%)
+  ✓ grades_extract_2022T4E_EHSS-1.csv                  | EHSS-1       | 2022T4E         |  68/142 students ( 95.8%)
+  ✓ grades_extract_2022T4E_EHSS-2.csv                  | EHSS-2       | 2022T4E         | 124/252 students ( 98.4%)
+  ✓ grades_extract_2022T4E_EHSS-3.csv                  | EHSS-3       | 2022T4E         |  52/112 students ( 92.9%)
+  ✓ grades_extract_2022T4E_EHSS-4.csv                  | EHSS-4       | 2022T4E         |  33/ 66 students (100.0%)
+  ✓ grades_extract_2022T4E_EHSS-5.csv                  | EHSS-5       | 2022T4E         |  49/104 students ( 94.2%)
+  ✓ grades_extract_2022T4E_EHSS-6.csv                  | EHSS-6       | 2022T4E         |  50/102 students ( 98.0%)
+  ✓ grades_extract_2022T4E_EHSS-7.csv                  | EHSS-7       | 2022T4E         |  28/ 60 students ( 93.3%)
+  ✓ grades_extract_2022T4E_EHSS-9.csv                  | EHSS-9       | 2022T4E         |  33/ 66 students (100.0%)
+  ✓ grades_extract_2022T4E_IEAP-2.csv                  | IEAP-2       | 2022T4E         |  56/ 99 students ( 98.2%)
+  ✓ grades_extract_2022T4E_IEAP-3.csv                  | IEAP-3       | 2022T4E         |  29/ 60 students ( 96.7%)
+  ✓ grades_extract_2023T1ET1E_EHSS-08.csv              | EHSS-08      | 2023T1ET1E      |  26/ 26 students (100.0%)
+  ✓ grades_extract_2023T1ET1E_EHSS-1.csv               | EHSS-1       | 2023T1ET1E      |  56/120 students ( 93.3%)
+  ✓ grades_extract_2023T1ET1E_EHSS-10.csv              | EHSS-10      | 2023T1ET1E      |  36/ 72 students (100.0%)
+  ✓ grades_extract_2023T1ET1E_EHSS-11.csv              | EHSS-11      | 2023T1ET1E      |  22/ 44 students (100.0%)
+  ✓ grades_extract_2023T1ET1E_EHSS-12.csv              | EHSS-12      | 2023T1ET1E      |  17/ 35 students ( 94.4%)
+  ✓ grades_extract_2023T1ET1E_EHSS-2.csv               | EHSS-2       | 2023T1ET1E      |  85/172 students ( 98.8%)
+  ✓ grades_extract_2023T1ET1E_EHSS-3.csv               | EHSS-3       | 2023T1ET1E      |  68/146 students ( 93.2%)
+  ✓ grades_extract_2023T1ET1E_EHSS-4.csv               | EHSS-4       | 2023T1ET1E      |  90/184 students ( 97.8%)
+  ✓ grades_extract_2023T1ET1E_EHSS-5.csv               | EHSS-5       | 2023T1ET1E      |  54/112 students ( 96.4%)
+  ✓ grades_extract_2023T1ET1E_EHSS-6.csv               | EHSS-6       | 2023T1ET1E      |  72/144 students (100.0%)
+  ✓ grades_extract_2023T1ET1E_EHSS-8.csv               | EHSS-8       | 2023T1ET1E      |  26/ 54 students ( 96.3%)
+  ✓ grades_extract_2023T1ET1E_GESL-1.csv               | GESL-1       | 2023T1ET1E      |  14/ 42 students (100.0%)
+  ✓ grades_extract_2023T1ET1E_GESL-2.csv               | GESL-2       | 2023T1ET1E      |  19/ 63 students ( 90.5%)
+  ✓ grades_extract_2023T1ET1E_GESL-3.csv               | GESL-3       | 2023T1ET1E      |  26/ 54 students ( 96.3%)
+  ✓ grades_extract_2023T1ET1E_IEAP-1.csv               | IEAP-1       | 2023T1ET1E      |  77/156 students ( 98.7%)
+  ✓ grades_extract_2023T1ET1E_IEAP-2.csv               | IEAP-2       | 2023T1ET1E      |  67/138 students ( 97.1%)
+  ✓ grades_extract_2023T1ET1E_IEAP-3.csv               | IEAP-3       | 2023T1ET1E      |  48/ 98 students ( 98.0%)
+  ✓ grades_extract_2023T1ET1E_IEAP-4.csv               | IEAP-4       | 2023T1ET1E      |  36/ 80 students ( 83.7%)
+  ✓ grades_extract_2023T1ET1E_IEAP-BEG.csv             | IEAP-BEG     | 2023T1ET1E      |  19/ 46 students ( 82.6%)
+  ✓ grades_extract_2023T1ET1E_IEAP-PRE.csv             | IEAP-PRE     | 2023T1ET1E      |  22/ 46 students ( 95.7%)
+  ✓ grades_extract_2023T2BT2E_EHSS-02.csv              | EHSS-02      | 2023T2BT2E      |  19/ 38 students (100.0%)
+  ✓ grades_extract_2023T2BT2E_EHSS-03.csv              | EHSS-03      | 2023T2BT2E      |  68/137 students ( 98.6%)
+  ✓ grades_extract_2023T2BT2E_EHSS-04.csv              | EHSS-04      | 2023T2BT2E      |  28/ 64 students ( 87.5%)
+  ✓ grades_extract_2023T2BT2E_EHSS-05.csv              | EHSS-05      | 2023T2BT2E      |  38/ 84 students ( 90.5%)
+  ✓ grades_extract_2023T2BT2E_EHSS-06.csv              | EHSS-06      | 2023T2BT2E      |  34/ 68 students (100.0%)
+  ✓ grades_extract_2023T2BT2E_EHSS-08.csv              | EHSS-08      | 2023T2BT2E      |  26/ 26 students (100.0%)
+  ✓ grades_extract_2023T2BT2E_EHSS-09.csv              | EHSS-09      | 2023T2BT2E      |   8/ 18 students ( 88.9%)
+  ✓ grades_extract_2023T2BT2E_EHSS-11.csv              | EHSS-11      | 2023T2BT2E      |  10/ 20 students (100.0%)
+  ✓ grades_extract_2023T2BT2E_GESL-02.csv              | GESL-02      | 2023T2BT2E      |  30/ 60 students (100.0%)
+  ✓ grades_extract_2023T2BT2E_IEAP-01.csv              | IEAP-01      | 2023T2BT2E      |  28/ 56 students (100.0%)
+  ✓ grades_extract_2023T2BT2E_IEAP-02.csv              | IEAP-02      | 2023T2BT2E      |  16/ 32 students (100.0%)
+  ✓ grades_extract_2023T2E_EHSS-01.csv                 | EHSS-01      | 2023T2E         |  70/ 73 students ( 95.9%)
+  ✓ grades_extract_2023T2E_EHSS-02.csv                 | EHSS-02      | 2023T2E         |  33/ 33 students (100.0%)
+  ✓ grades_extract_2023T2E_EHSS-03.csv                 | EHSS-03      | 2023T2E         |  50/ 56 students ( 89.3%)
+  ✓ grades_extract_2023T2E_EHSS-04.csv                 | EHSS-04      | 2023T2E         |  55/ 62 students ( 88.7%)
+  ✓ grades_extract_2023T2E_EHSS-05.csv                 | EHSS-05      | 2023T2E         |  42/ 43 students ( 97.7%)
+  ✓ grades_extract_2023T2E_EHSS-06.csv                 | EHSS-06      | 2023T2E         |  27/ 30 students ( 90.0%)
+  ✓ grades_extract_2023T2E_EHSS-07.csv                 | EHSS-07      | 2023T2E         |  11/ 12 students ( 91.7%)
+  ✓ grades_extract_2023T2E_EHSS-09.csv                 | EHSS-09      | 2023T2E         |  13/ 14 students ( 92.9%)
+  ✓ grades_extract_2023T2E_IEAP-3.csv                  | IEAP-3       | 2023T2E         |  22/ 22 students (100.0%)
+  ✓ grades_extract_2023T2E_IEAP-4.csv                  | IEAP-4       | 2023T2E         |  17/ 18 students ( 94.4%)
+  ✓ grades_extract_2023T2E_IEAP-BEG.csv                | IEAP-Beg     | 2023T2E         |  17/ 18 students ( 94.4%)
+  ✓ grades_extract_2023T2E_IEAP-PRE.csv                | IEAP-Pre     | 2023T2E         |  28/ 28 students (100.0%)
+  ✓ grades_extract_2023T4E_EHSS-01.csv                 | EHSS-01      | 2023T4E         |  23/ 48 students ( 95.8%)
+  ✓ grades_extract_2023T4E_EHSS-02.csv                 | EHSS-02      | 2023T4E         |  74/152 students ( 97.4%)
+  ✓ grades_extract_2023T4E_EHSS-03.csv                 | EHSS-03      | 2023T4E         |  29/ 62 students ( 90.6%)
+  ✓ grades_extract_2023T4E_EHSS-04.csv                 | EHSS-04      | 2023T4E         |  50/120 students ( 83.3%)
+  ✓ grades_extract_2023T4E_EHSS-05.csv                 | EHSS-05      | 2023T4E         |  41/ 92 students ( 89.1%)
+  ✓ grades_extract_2023T4E_EHSS-06.csv                 | EHSS-06      | 2023T4E         |  38/ 82 students ( 92.7%)
+  ✓ grades_extract_2023T4E_EHSS-08.csv                 | EHSS-08      | 2023T4E         |  10/ 20 students (100.0%)
+  ✓ grades_extract_2023T4E_EHSS-10.csv                 | EHSS-10      | 2023T4E         |  11/ 22 students (100.0%)
+  ✓ grades_extract_2023T4E_GESL-1.csv                  | GESL-1       | 2023T4E         |  27/ 56 students ( 96.4%)
+  ✓ grades_extract_2023T4E_IEAP-1.csv                  | IEAP-1       | 2023T4E         |  19/ 37 students (100.0%)
+  ✓ grades_extract_2023T4E_IEAP-4.csv                  | IEAP-4       | 2023T4E         |  20/ 42 students ( 95.2%)
+  ✓ grades_extract_2023T4E_IEAP-BEG.csv                | IEAP-BEG     | 2023T4E         |  29/ 60 students ( 96.7%)
+  ✓ grades_extract_231009E-T3AE_EHSS-1.csv             | EHSS-1       | 231009E-T3AE    |  47/ 94 students (100.0%)
+  ✓ grades_extract_231009E-T3AE_EHSS-10.csv            | EHSS-10      | 231009E-T3AE    |  30/ 60 students (100.0%)
+  ✓ grades_extract_231009E-T3AE_EHSS-11.csv            | EHSS-11      | 231009E-T3AE    |  30/ 60 students (100.0%)
+  ✓ grades_extract_231009E-T3AE_EHSS-12.csv            | EHSS-12      | 231009E-T3AE    |  18/ 36 students (100.0%)
+  ✓ grades_extract_231009E-T3AE_EHSS-2.csv             | EHSS-2       | 231009E-T3AE    |  58/116 students (100.0%)
+  ✓ grades_extract_231009E-T3AE_EHSS-3.csv             | EHSS-3       | 231009E-T3AE    |  84/174 students ( 96.6%)
+  ✓ grades_extract_231009E-T3AE_EHSS-4.csv             | EHSS-4       | 231009E-T3AE    |  69/138 students (100.0%)
+  ✓ grades_extract_231009E-T3AE_EHSS-5.csv             | EHSS-5       | 231009E-T3AE    |  85/170 students (100.0%)
+  ✓ grades_extract_231009E-T3AE_EHSS-6.csv             | EHSS-6       | 231009E-T3AE    |  45/ 90 students (100.0%)
+  ✓ grades_extract_231009E-T3AE_EHSS-9.csv             | EHSS-9       | 231009E-T3AE    |  26/ 52 students (100.0%)
+  ✓ grades_extract_231009E-T3AE_GESL-1.csv             | GESL-1       | 231009E-T3AE    |  13/ 26 students (100.0%)
+  ✓ grades_extract_231009E-T3AE_GESL-2.csv             | GESL-2       | 231009E-T3AE    |  19/ 38 students (100.0%)
+  ✓ grades_extract_231009E-T3AE_GESL-3.csv             | GESL-3       | 231009E-T3AE    |  20/ 40 students (100.0%)
+  ✓ grades_extract_231009E-T3AE_GESL-4.csv             | GESL-4       | 231009E-T3AE    |  19/ 38 students (100.0%)
+  ✓ grades_extract_231009E-T3AE_IEAP-1.csv             | IEAP-1       | 231009E-T3AE    |  18/ 36 students (100.0%)
+  ✓ grades_extract_231009E-T3AE_IEAP-2.csv             | IEAP-2       | 231009E-T3AE    |  70/142 students ( 98.6%)
+  ✓ grades_extract_231009E-T3AE_IEAP-3.csv             | IEAP-3       | 231009E-T3AE    |  66/132 students (100.0%)
+  ✓ grades_extract_231009E-T3AE_IEAP-4.csv             | IEAP-4       | 231009E-T3AE    |  52/104 students (100.0%)
+  ✓ grades_extract_231106E-T4BE_EHSS-01.csv            | EHSS-01      | 231106E-T4BE    |  29/ 58 students (100.0%)
+  ✓ grades_extract_231106E-T4BE_EHSS-02.csv            | EHSS-02      | 231106E-T4BE    |  14/ 28 students (100.0%)
+  ✓ grades_extract_231106E-T4BE_EHSS-03.csv            | EHSS-03      | 231106E-T4BE    |  22/ 44 students (100.0%)
+  ✓ grades_extract_231106E-T4BE_EHSS-04.csv            | EHSS-04      | 231106E-T4BE    |  56/112 students (100.0%)
+  ✓ grades_extract_231106E-T4BE_EHSS-05.csv            | EHSS-05      | 231106E-T4BE    |  30/ 60 students (100.0%)
+  ✓ grades_extract_231106E-T4BE_EHSS-06.csv            | EHSS-06      | 231106E-T4BE    |  30/ 90 students (100.0%)
+  ✓ grades_extract_231106E-T4BE_EHSS-07.csv            | EHSS-07      | 231106E-T4BE    |  26/ 26 students (100.0%)
+  ✓ grades_extract_231106E-T4BE_EHSS-08.csv            | EHSS-08      | 231106E-T4BE    |  29/ 58 students (100.0%)
+  ✓ grades_extract_231106E-T4BE_EHSS-09.csv            | EHSS-09      | 231106E-T4BE    |  18/ 36 students (100.0%)
+  ✓ grades_extract_231106E-T4BE_EHSS-12.csv            | EHSS-12      | 231106E-T4BE    |  10/ 10 students (100.0%)
+  ✓ grades_extract_231106E-T4BE_GESL-02.csv            | GESL-02      | 231106E-T4BE    |  10/ 20 students (100.0%)
+  ✓ grades_extract_231106E-T4BE_GESL-03.csv            | GESL-03      | 231106E-T4BE    |  18/ 36 students (100.0%)
+  ✓ grades_extract_231106E-T4BE_IEAP-02.csv            | IEAP-02      | 231106E-T4BE    |  28/ 58 students ( 96.6%)
+  ✓ grades_extract_231106E-T4BE_IEAP-03.csv            | IEAP-03      | 231106E-T4BE    |  14/ 28 students (100.0%)
+  ✓ grades_extract_240109E-T1AE_EHSS-1.csv             | EHSS-1       | 240109E-T1AE    |  71/144 students (100.0%)
+  ✓ grades_extract_240109E-T1AE_EHSS-10.csv            | EHSS-10      | 240109E-T1AE    |  26/ 52 students (100.0%)
+  ✓ grades_extract_240109E-T1AE_EHSS-11.csv            | EHSS-11      | 240109E-T1AE    |  30/ 60 students (100.0%)
+  ✓ grades_extract_240109E-T1AE_EHSS-12.csv            | EHSS-12      | 240109E-T1AE    |  27/ 54 students (100.0%)
+  ✓ grades_extract_240109E-T1AE_EHSS-2.csv             | EHSS-2       | 240109E-T1AE    |  69/ 69 students (100.0%)
+  ✓ grades_extract_240109E-T1AE_EHSS-3.csv             | EHSS-3       | 240109E-T1AE    |  63/126 students (100.0%)
+  ✓ grades_extract_240109E-T1AE_EHSS-4.csv             | EHSS-4       | 240109E-T1AE    |  77/154 students (100.0%)
+  ✓ grades_extract_240109E-T1AE_EHSS-5.csv             | EHSS-5       | 240109E-T1AE    |  70/142 students ( 98.6%)
+  ✓ grades_extract_240109E-T1AE_EHSS-6.csv             | EHSS-6       | 240109E-T1AE    |  71/144 students ( 98.6%)
+  ✓ grades_extract_240109E-T1AE_EHSS-9.csv             | EHSS-9       | 240109E-T1AE    |  23/ 46 students (100.0%)
+  ✓ grades_extract_240109E-T1AE_GESL-1.csv             | GESL-1       | 240109E-T1AE    |  28/ 58 students (100.0%)
+  ✓ grades_extract_240109E-T1AE_GESL-2.csv             | GESL-2       | 240109E-T1AE    |  17/ 34 students (100.0%)
+  ✓ grades_extract_240109E-T1AE_GESL-3.csv             | GESL-3       | 240109E-T1AE    |  13/ 25 students (100.0%)
+  ✓ grades_extract_240109E-T1AE_GESL-4.csv             | GESL-4       | 240109E-T1AE    |  16/ 32 students (100.0%)
+  ✓ grades_extract_240109E-T1AE_GESL-5.csv             | GESL-5       | 240109E-T1AE    |  16/ 32 students (100.0%)
+  ✓ grades_extract_240109E-T1AE_IEAP-1.csv             | IEAP-1       | 240109E-T1AE    |  42/ 89 students ( 91.3%)
+  ✓ grades_extract_240109E-T1AE_IEAP-2.csv             | IEAP-2       | 240109E-T1AE    |  22/ 22 students (100.0%)
+  ✓ grades_extract_240109E-T1AE_IEAP-3.csv             | IEAP-3       | 240109E-T1AE    |  69/149 students ( 88.5%)
+  ✓ grades_extract_240109E-T1AE_IEAP-4.csv             | IEAP-4       | 240109E-T1AE    |  66/132 students (100.0%)
+  ✓ grades_extract_240205E-T3BE_EHSS-1.csv             | EHSS-1       | 240205E-T3BE    |  17/ 34 students (100.0%)
+  ✓ grades_extract_240205E-T3BE_EHSS-10.csv            | EHSS-10      | 240205E-T3BE    |  20/ 40 students (100.0%)
+  ✓ grades_extract_240205E-T3BE_EHSS-2.csv             | EHSS-2       | 240205E-T3BE    |  22/ 44 students (100.0%)
+  ✓ grades_extract_240205E-T3BE_EHSS-3.csv             | EHSS-3       | 240205E-T3BE    |  17/ 34 students (100.0%)
+  ✓ grades_extract_240205E-T3BE_EHSS-4.csv             | EHSS-4       | 240205E-T3BE    |  24/ 48 students (100.0%)
+  ✓ grades_extract_240205E-T3BE_EHSS-5.csv             | EHSS-5       | 240205E-T3BE    |  47/ 94 students (100.0%)
+  ✓ grades_extract_240205E-T3BE_EHSS-6.csv             | EHSS-6       | 240205E-T3BE    |  21/ 42 students (100.0%)
+  ✓ grades_extract_240205E-T3BE_EHSS-7.csv             | EHSS-7       | 240205E-T3BE    |  24/ 48 students (100.0%)
+  ✓ grades_extract_240205E-T3BE_EHSS-8.csv             | EHSS-8       | 240205E-T3BE    |  26/ 54 students ( 96.3%)
+  ✓ grades_extract_240205E-T3BE_EHSS-9.csv             | EHSS-9       | 240205E-T3BE    |  23/ 46 students (100.0%)
+  ✓ grades_extract_240205E-T3BE_GESL-1.csv             | GESL-1       | 240205E-T3BE    |  18/ 38 students ( 94.7%)
+  ✓ grades_extract_240205E-T3BE_GESL-4.csv             | GESL-4       | 240205E-T3BE    |  16/ 32 students (100.0%)
+  ✓ grades_extract_240205E-T3BE_IEAP-3.csv             | IEAP-3       | 240205E-T3BE    |  27/ 56 students ( 96.4%)
+  ✓ grades_extract_240205E-T3BE_IEAP-4.csv             | IEAP-4       | 240205E-T3BE    |  13/ 26 students (100.0%)
+  ✓ grades_extract_240403E-T2AE_EHSS-12.csv            | EHSS-12      | 240403E-T2AE    |  26/ 58 students ( 89.7%)
+  ✓ grades_extract_240403E-T2AE_GESL-03.csv            | GESL-03      | 240403E-T2AE    |   7/  7 students (100.0%)
+  ✓ grades_extract_240403E-T2AE_GESL-04.csv            | GESL-04      | 240403E-T2AE    |  13/ 13 students (100.0%)
+  ✓ grades_extract_240403E-T2AE_GESL-06.csv            | GESL-06      | 240403E-T2AE    |   9/  9 students (100.0%)
+  ✓ grades_extract_240403E-T2AE_IEAP-03.csv            | IEAP-03      | 240403E-T2AE    |  27/ 28 students ( 96.4%)
+  ✓ grades_extract_240403E-T2AE_IEAP-1.csv             | IEAP-1       | 240403E-T2AE    |  72/ 86 students ( 83.7%)
+  ✓ grades_extract_240403E-T2AE_IEAP-2.csv             | IEAP-2       | 240403E-T2AE    |  44/ 44 students (100.0%)
+  ✓ grades_extract_240506E-T2BE_EHSS-01.csv            | EHSS-01      | 240506E-T2BE    |  33/ 33 students (100.0%)
+  ✓ grades_extract_240506E-T2BE_EHSS-02.csv            | EHSS-02      | 240506E-T2BE    |  22/ 22 students (100.0%)
+  ✓ grades_extract_240506E-T2BE_EHSS-03.csv            | EHSS-03      | 240506E-T2BE    |  26/ 26 students (100.0%)
+  ✓ grades_extract_240506E-T2BE_EHSS-04.csv            | EHSS-04      | 240506E-T2BE    |  29/ 29 students (100.0%)
+  ✓ grades_extract_240506E-T2BE_EHSS-05.csv            | EHSS-05      | 240506E-T2BE    |  21/ 21 students (100.0%)
+  ✓ grades_extract_240506E-T2BE_EHSS-06.csv            | EHSS-06      | 240506E-T2BE    |  44/ 44 students (100.0%)
+  ✓ grades_extract_240506E-T2BE_EHSS-07.csv            | EHSS-07      | 240506E-T2BE    |  21/ 22 students ( 95.5%)
+  ✓ grades_extract_240506E-T2BE_EHSS-08.csv            | EHSS-08      | 240506E-T2BE    |  26/ 26 students (100.0%)
+  ✓ grades_extract_240506E-T2BE_EHSS-09.csv            | EHSS-09      | 240506E-T2BE    |  19/ 19 students (100.0%)
+  ✓ grades_extract_240506E-T2BE_EHSS-10.csv            | EHSS-10      | 240506E-T2BE    |  16/ 16 students (100.0%)
+  ✓ grades_extract_240506E-T2BE_EHSS-11.csv            | EHSS-11      | 240506E-T2BE    |  19/ 19 students (100.0%)
+  ✓ grades_extract_240506E-T2BE_GESL-01.csv            | GESL-01      | 240506E-T2BE    |  23/ 23 students (100.0%)
+  ✓ grades_extract_240506E-T2BE_GESL-02.csv            | GESL-02      | 240506E-T2BE    |  22/ 22 students (100.0%)
+  ✓ grades_extract_240506E-T2BE_GESL-05.csv            | GESL-05      | 240506E-T2BE    |  13/ 13 students (100.0%)
+  ✓ grades_extract_240506E-T2BE_IEAP-1.csv             | IEAP-1       | 240506E-T2BE    |  13/ 13 students (100.0%)
+  ✓ grades_extract_240506E-T2BE_IEAP-4.csv             | IEAP-4       | 240506E-T2BE    |  21/ 21 students (100.0%)
+  ✓ grades_extract_240708E-T3AE_EHSS-01.csv            | EHSS-01      | 240708E-T3AE    |  29/ 29 students (100.0%)
+  ✓ grades_extract_240708E-T3AE_EHSS-02.csv            | EHSS-02      | 240708E-T3AE    |  83/ 83 students (100.0%)
+  ✓ grades_extract_240708E-T3AE_EHSS-03.csv            | EHSS-03      | 240708E-T3AE    |  64/ 64 students (100.0%)
+  ✓ grades_extract_240708E-T3AE_EHSS-04.csv            | EHSS-04      | 240708E-T3AE    |  77/ 77 students (100.0%)
+  ✓ grades_extract_240708E-T3AE_EHSS-05.csv            | EHSS-05      | 240708E-T3AE    |  45/ 45 students (100.0%)
+  ✓ grades_extract_240708E-T3AE_EHSS-06.csv            | EHSS-06      | 240708E-T3AE    |  52/ 52 students (100.0%)
+  ✓ grades_extract_240708E-T3AE_EHSS-10.csv            | EHSS-10      | 240708E-T3AE    |  34/ 34 students (100.0%)
+  ✓ grades_extract_240708E-T3AE_EHSS-11.csv            | EHSS-11      | 240708E-T3AE    |  20/ 20 students (100.0%)
+  ✓ grades_extract_240708E-T3AE_EHSS-12.csv            | EHSS-12      | 240708E-T3AE    |  21/ 21 students (100.0%)
+  ✓ grades_extract_240708E-T3AE_GESL-01.csv            | GESL-01      | 240708E-T3AE    |  17/ 17 students (100.0%)
+  ✓ grades_extract_240708E-T3AE_GESL-02.csv            | GESL-02      | 240708E-T3AE    |  27/ 27 students (100.0%)
+  ✓ grades_extract_240708E-T3AE_GESL-03.csv            | GESL-03      | 240708E-T3AE    |  22/ 22 students (100.0%)
+  ✓ grades_extract_240708E-T3AE_GESL-04.csv            | GESL-04      | 240708E-T3AE    |   6/  6 students (100.0%)
+  ✓ grades_extract_240708E-T3AE_GESL-05.csv            | GESL-05      | 240708E-T3AE    |  11/ 11 students (100.0%)
+  ✓ grades_extract_240708E-T3AE_GESL-06.csv            | GESL-06      | 240708E-T3AE    |  10/ 10 students (100.0%)
+  ✓ grades_extract_240708E-T3AE_GESL-07.csv            | GESL-07      | 240708E-T3AE    |   7/  7 students (100.0%)
+  ✓ grades_extract_240708E-T3AE_IEAP-1.csv             | IEAP-1       | 240708E-T3AE    |  51/ 51 students (100.0%)
+  ✓ grades_extract_240708E-T3AE_IEAP-2.csv             | IEAP-2       | 240708E-T3AE    |  50/ 50 students (100.0%)
+  ✓ grades_extract_240708E-T3AE_IEAP-3.csv             | IEAP-3       | 240708E-T3AE    |  45/ 46 students ( 97.8%)
+  ✓ grades_extract_240806E-T3BE_EHSS-01.csv            | EHSS-01      | 240806E-T3BE    |  25/ 25 students (100.0%)
+  ✓ grades_extract_240806E-T3BE_EHSS-02.csv            | EHSS-02      | 240806E-T3BE    |  30/ 30 students (100.0%)
+  ✓ grades_extract_240806E-T3BE_EHSS-03.csv            | EHSS-03      | 240806E-T3BE    |  24/ 24 students (100.0%)
+  ✓ grades_extract_240806E-T3BE_EHSS-04.csv            | EHSS-04      | 240806E-T3BE    |  21/ 23 students ( 91.3%)
+  ✓ grades_extract_240806E-T3BE_EHSS-05.csv            | EHSS-05      | 240806E-T3BE    |  22/ 22 students (100.0%)
+  ✓ grades_extract_240806E-T3BE_EHSS-06.csv            | EHSS-06      | 240806E-T3BE    |  16/ 16 students (100.0%)
+  ✓ grades_extract_240806E-T3BE_EHSS-07.csv            | EHSS-07      | 240806E-T3BE    |  39/ 39 students (100.0%)
+  ✓ grades_extract_240806E-T3BE_EHSS-08.csv            | EHSS-08      | 240806E-T3BE    |  22/ 22 students (100.0%)
+  ✓ grades_extract_240806E-T3BE_EHSS-09.csv            | EHSS-09      | 240806E-T3BE    |  20/ 20 students (100.0%)
+  ✓ grades_extract_240806E-T3BE_EHSS-10.csv            | EHSS-10      | 240806E-T3BE    |  14/ 14 students (100.0%)
+  ✓ grades_extract_240806E-T3BE_EHSS-11.csv            | EHSS-11      | 240806E-T3BE    |  15/ 15 students (100.0%)
+  ✓ grades_extract_240806E-T3BE_EHSS-12.csv            | EHSS-12      | 240806E-T3BE    |  17/ 18 students ( 94.4%)
+  ✓ grades_extract_240806E-T3BE_GESL-01.csv            | GESL-01      | 240806E-T3BE    |  10/ 10 students (100.0%)
+  ✓ grades_extract_240806E-T3BE_GESL-02.csv            | GESL-02      | 240806E-T3BE    |  16/ 17 students ( 94.1%)
+  ✓ grades_extract_240806E-T3BE_GESL-03.csv            | GESL-03      | 240806E-T3BE    |  13/ 13 students (100.0%)
+  ✓ grades_extract_240806E-T3BE_GESL-06.csv            | GESL-06      | 240806E-T3BE    |   7/  7 students (100.0%)
+  ✓ grades_extract_240806E-T3BE_IEAP-02.csv            | IEAP-02      | 240806E-T3BE    |  13/ 13 students (100.0%)
+
+================================================================================
+FAILED FILES:
+================================================================================
+  ✗ grades_extract_2021T2T2E_GESL-PB2.csv              | GESL-PB2     | 2021T2T2E      
+     Reason: No matching records in database
+     Match: 0/17 students (0.0%)
+  ✗ grades_extract_2022AT3E_EHSS-7A.csv                | EHSS-7A      | 2022AT3E       
+     Reason: No matching records in database
+     Match: 0/21 students (0.0%)
+  ✗ grades_extract_2022AT3E_EHSS-7B.csv                | EHSS-7B      | 2022AT3E       
+     Reason: No matching records in database
+     Match: 0/26 students (0.0%)
+  ✗ grades_extract_2022AT3E_GESL-B2.csv                | GESL-B2      | 2022AT3E       
+     Reason: No matching records in database
+     Match: 0/72 students (0.0%)
+  ✗ grades_extract_2022AT3E_IEAP-B.csv                 | IEAP-B       | 2022AT3E       
+     Reason: No matching records in database
+     Match: 0/36 students (0.0%)
+  ✗ grades_extract_2022T1T1E_IEAP-BG.csv               | IEAP-BG-2022T1T1E | IEAP-BG-2022T1T1E Grades rev. 1
+     Reason: No matching records in database
+     Match: 0/118 students (0.0%)
+  ✗ grades_extract_2022T3E_EHSS-03.csv                 | EHSS-03      | 2022T3E        
+     Reason: Low match rate: 76.5% < 80%
+     Match: 39/94 students (76.5%)
+  ✗ grades_extract_2022T3E_EHSS-06.csv                 | EHSS-06      | 2022T3E        
+     Reason: Low match rate: 73.5% < 80%
+     Match: 25/61 students (73.5%)
+  ✗ grades_extract_2022T3E_EHSS-09.csv                 | EHSS-09      | 2022T3E        
+     Reason: Low match rate: 70.0% < 80%
+     Match: 7/17 students (70.0%)
+  ✗ grades_extract_2022T4E_EHSS-01.csv                 | EHSS-01      | 2022T4E        
+     Reason: Low match rate: 55.0% < 80%
+     Match: 83/152 students (55.0%)
+  ✗ grades_extract_2022T4E_EHSS-02.csv                 | EHSS-02      | 2022T4E        
+     Reason: Low match rate: 34.0% < 80%
+     Match: 52/241 students (34.0%)
+  ✗ grades_extract_2022T4E_EHSS-03.csv                 | EHSS-03      | 2022T4E        
+     Reason: Low match rate: 38.7% < 80%
+     Match: 46/193 students (38.7%)
+  ✗ grades_extract_2022T4E_EHSS-04.csv                 | EHSS-04      | 2022T4E        
+     Reason: Low match rate: 12.7% < 80%
+     Match: 16/231 students (12.7%)
+  ✗ grades_extract_2022T4E_EHSS-05.csv                 | EHSS-05      | 2022T4ET4E     
+     Reason: Low match rate: 2.4% < 80%
+     Match: 1/41 students (2.4%)
+  ✗ grades_extract_2022T4E_EHSS-06.csv                 | EHSS-06      | 2022T4E        
+     Reason: Low match rate: 28.3% < 80%
+     Match: 15/85 students (28.3%)
+  ✗ grades_extract_2022T4E_EHSS-07.csv                 | EHSS-07      | 2022T4ET4E     
+     Reason: Low match rate: 3.8% < 80%
+     Match: 2/53 students (3.8%)
+  ✗ grades_extract_2022T4E_EHSS-07A.csv                | EHSS-07A     | 2022T4ET4E     
+     Reason: No matching records in database
+     Match: 0/29 students (0.0%)
+  ✗ grades_extract_2022T4E_EHSS-07B.csv                | EHSS-07B     | 2022T4ET4E     
+     Reason: No matching records in database
+     Match: 0/29 students (0.0%)
+  ✗ grades_extract_2022T4E_EHSS-08.csv                 | EHSS-08      | 2022T4ET4E     
+     Reason: Low match rate: 7.0% < 80%
+     Match: 3/86 students (7.0%)
+  ✗ grades_extract_2022T4E_EHSS-08A.csv                | EHSS-08A     | 2022T4ET4E     
+     Reason: No matching records in database
+     Match: 0/23 students (0.0%)
+  ✗ grades_extract_2022T4E_EHSS-08B.csv                | EHSS-08B     | 2022T4ET4E     
+     Reason: No matching records in database
+     Match: 0/23 students (0.0%)
+  ✗ grades_extract_2022T4E_EHSS-09.csv                 | EHSS-09      | 2022T4ET4E     
+     Reason: No matching records in database
+     Match: 0/65 students (0.0%)
+  ✗ grades_extract_2022T4E_EHSS-10.csv                 | EHSS-10      | 2022T4E        
+     Reason: Low match rate: 23.3% < 80%
+     Match: 7/56 students (23.3%)
+  ✗ grades_extract_2022T4E_EHSS-11.csv                 | EHSS-11      | 2022T4E        
+     Reason: Low match rate: 46.4% < 80%
+     Match: 26/102 students (46.4%)
+  ✗ grades_extract_2022T4E_GESL-01.csv                 | GESL-01      | 2022T4ET4E     
+     Reason: No matching records in database
+     Match: 0/46 students (0.0%)
+  ✗ grades_extract_2022T4E_GESL-PB1.csv                | GESL-PB1     | 2022T4ET4E     
+     Reason: No matching records in database
+     Match: 0/30 students (0.0%)
+  ✗ grades_extract_2022T4E_GESL-PB2.csv                | GESL-PB2     | 2022T4ET4E     
+     Reason: No matching records in database
+     Match: 0/100 students (0.0%)
+  ✗ grades_extract_2022T4E_GESL-PRE.csv                | GESL-Pre-B1  | 2022T4ET4E     
+     Reason: No matching records in database
+     Match: 0/30 students (0.0%)
+  ✗ grades_extract_2022T4E_IEAP-01.csv                 | IEAP-01      | 2022T4ET4E     
+     Reason: Low match rate: 3.3% < 80%
+     Match: 2/60 students (3.3%)
+  ✗ grades_extract_2022T4E_IEAP-02.csv                 | IEAP-02      | 2022T4ET4E     
+     Reason: Low match rate: 3.8% < 80%
+     Match: 2/53 students (3.8%)
+  ✗ grades_extract_2022T4E_IEAP-03.csv                 | IEAP-03      | 2022T4ET4E     
+     Reason: Low match rate: 2.5% < 80%
+     Match: 1/40 students (2.5%)
+  ✗ grades_extract_2022T4E_IEAP-04.csv                 | IEAP-04      | 2022T4ET4E     
+     Reason: Low match rate: 4.8% < 80%
+     Match: 2/42 students (4.8%)
+  ✗ grades_extract_2022T4E_IEAP-1.csv                  | IEAP-1       | 2022T4E        
+     Reason: Low match rate: 55.7% < 80%
+     Match: 73/173 students (55.7%)
+  ✗ grades_extract_2022T4E_IEAP-4.csv                  | IEAP-4       | 2022T4E        
+     Reason: Low match rate: 51.8% < 80%
+     Match: 44/128 students (51.8%)
+  ✗ grades_extract_2022T4E_IEAP-BEGINNER.csv           | IEAP-Beginner-FINAL | 2022T4E        
+     Reason: No matching records in database
+     Match: 0/27 students (0.0%)
+  ✗ grades_extract_2022T4E_IEAP-BG.csv                 | IEAP-BG      | 2022T4ET4E     
+     Reason: No matching records in database
+     Match: 0/140 students (0.0%)
+  ✗ grades_extract_2022T4E_IEAP-PRE.csv                | IEAP-Pre     | 2022T4ET4E     
+     Reason: No matching records in database
+     Match: 0/148 students (0.0%)
+  ✗ grades_extract_2023T1ET1E_EHSS-7A.csv              | EHSS-7A      | 2023T1ET1E     
+     Reason: No matching records in database
+     Match: 0/32 students (0.0%)
+  ✗ grades_extract_2023T1ET1E_EHSS-7B.csv              | EHSS-7B      | 2023T1ET1E     
+     Reason: No matching records in database
+     Match: 0/36 students (0.0%)
+  ✗ grades_extract_2023T1ET1E_EHSS-9A.csv              | EHSS-9A      | 2023T1ET1E     
+     Reason: No matching records in database
+     Match: 0/34 students (0.0%)
+  ✗ grades_extract_2023T1ET1E_EHSS-9B.csv              | EHSS-9B      | 2023T1ET1E     
+     Reason: No matching records in database
+     Match: 0/45 students (0.0%)
+  ✗ grades_extract_2023T1ET1E_GESL-PB2.csv             | GESL-PB2     | 2023T1ET1E     
+     Reason: No matching records in database
+     Match: 0/100 students (0.0%)
+  ✗ grades_extract_2023T2BT2E_EHSS-01.csv              | EHSS-01      | 2023T2BT2E     
+     Reason: Low match rate: 73.7% < 80%
+     Match: 14/38 students (73.7%)
+  ✗ grades_extract_2023T2BT2E_EHSS-07A.csv             | EHSS-07A     | 2023T2BT2E     
+     Reason: No matching records in database
+     Match: 0/28 students (0.0%)
+  ✗ grades_extract_2023T2BT2E_EHSS-07B.csv             | EHSS-07B     | 2023T2BT2E     
+     Reason: No matching records in database
+     Match: 0/40 students (0.0%)
+  ✗ grades_extract_2023T2BT2E_GESL-01.csv              | GESL-01      | 2023T2BT2E     
+     Reason: Low match rate: 75.0% < 80%
+     Match: 18/48 students (75.0%)
+  ✗ grades_extract_2023T2BT2E_GESL-PB2.csv             | GESL-PB2     | 2023T2BT2E     
+     Reason: No matching records in database
+     Match: 0/82 students (0.0%)
+  ✗ grades_extract_2023T2E_EHSS-PREB2.csv              | EHSS-PreB2   | 2023T2E        
+     Reason: No matching records in database
+     Match: 0/39 students (0.0%)
+  ✗ grades_extract_2023T3E_EHSS-01.csv                 | EHSS-01      | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/72 students (0.0%)
+  ✗ grades_extract_2023T3E_EHSS-02.csv                 | EHSS-02      | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/69 students (0.0%)
+  ✗ grades_extract_2023T3E_EHSS-03.csv                 | EHSS-03      | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/71 students (0.0%)
+  ✗ grades_extract_2023T3E_EHSS-04.csv                 | EHSS-04      | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/47 students (0.0%)
+  ✗ grades_extract_2023T3E_EHSS-05.csv                 | EHSS-05      | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/63 students (0.0%)
+  ✗ grades_extract_2023T3E_EHSS-06.csv                 | EHSS-06      | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/63 students (0.0%)
+  ✗ grades_extract_2023T3E_EHSS-07A.csv                | EHSS-07A     | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/21 students (0.0%)
+  ✗ grades_extract_2023T3E_EHSS-07B.csv                | EHSS-07B     | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/22 students (0.0%)
+  ✗ grades_extract_2023T3E_EHSS-07C.csv                | EHSS-07C     | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/22 students (0.0%)
+  ✗ grades_extract_2023T3E_EHSS-08A.csv                | EHSS-08A     | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/22 students (0.0%)
+  ✗ grades_extract_2023T3E_EHSS-08B.csv                | EHSS-08B     | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/24 students (0.0%)
+  ✗ grades_extract_2023T3E_EHSS-09A.csv                | EHSS-09A     | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/24 students (0.0%)
+  ✗ grades_extract_2023T3E_EHSS-09B.csv                | EHSS-09B     | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/25 students (0.0%)
+  ✗ grades_extract_2023T3E_EHSS-10.csv                 | EHSS-10      | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/19 students (0.0%)
+  ✗ grades_extract_2023T3E_EHSS-11.csv                 | EHSS-11      | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/24 students (0.0%)
+  ✗ grades_extract_2023T3E_EHSS-12.csv                 | EHSS-12      | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/25 students (0.0%)
+  ✗ grades_extract_2023T3E_GESL-01.csv                 | GESL-01      | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/36 students (0.0%)
+  ✗ grades_extract_2023T3E_GESL-02.csv                 | GESL-02      | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/21 students (0.0%)
+  ✗ grades_extract_2023T3E_GESL-03.csv                 | GESL-03      | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/7 students (0.0%)
+  ✗ grades_extract_2023T3E_GESL-04.csv                 | GESL-04      | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/13 students (0.0%)
+  ✗ grades_extract_2023T3E_GESL-05.csv                 | GESL-05      | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/18 students (0.0%)
+  ✗ grades_extract_2023T3E_GESL-06.csv                 | GESL-06      | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/9 students (0.0%)
+  ✗ grades_extract_2023T3E_IEAP-1.csv                  | IEAP-1       | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/73 students (0.0%)
+  ✗ grades_extract_2023T3E_IEAP-2.csv                  | IEAP-2       | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/44 students (0.0%)
+  ✗ grades_extract_2023T3E_IEAP-3.csv                  | IEAP-3       | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/28 students (0.0%)
+  ✗ grades_extract_2023T3E_IEAP-4.csv                  | IEAP-4       | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/69 students (0.0%)
+  ✗ grades_extract_2023T3E_IEAP-B.csv                  | IEAP-B       | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/66 students (0.0%)
+  ✗ grades_extract_2023T3E_IEAP-P.csv                  | IEAP-P       | 2023T3E        
+     Reason: No matching records in database
+     Match: 0/28 students (0.0%)
+  ✗ grades_extract_2023T4E_EHSS-07A.csv                | EHSS-07A     | 2023T4E        
+     Reason: No matching records in database
+     Match: 0/50 students (0.0%)
+  ✗ grades_extract_2023T4E_GESL-PREB2.csv              | GESL-PREB2   | 2023T4E        
+     Reason: No matching records in database
+     Match: 0/76 students (0.0%)
+  ✗ grades_extract_2023T4E_IEAP-4G.csv                 | IEAP-4G-2023T4E | IEAP-4G-2023T4E Grades
+     Reason: No matching records in database
+     Match: 0/21 students (0.0%)
+  ✗ grades_extract_231009E-T3AE_EHSS-7A.csv            | EHSS-7A      | 231009E-T3AE   
+     Reason: No matching records in database
+     Match: 0/32 students (0.0%)
+  ✗ grades_extract_231009E-T3AE_EHSS-7B.csv            | EHSS-7B      | 231009E-T3AE   
+     Reason: No matching records in database
+     Match: 0/46 students (0.0%)
+  ✗ grades_extract_231009E-T3AE_EHSS-7C.csv            | EHSS-7C      | 231009E-T3AE   
+     Reason: No matching records in database
+     Match: 0/42 students (0.0%)
+  ✗ grades_extract_231009E-T3AE_EHSS-8A.csv            | EHSS-8A      | 231009E-T3AE   
+     Reason: No matching records in database
+     Match: 0/30 students (0.0%)
+  ✗ grades_extract_231009E-T3AE_EHSS-8B.csv            | EHSS-8B      | 231009E-T3AE   
+     Reason: No matching records in database
+     Match: 0/24 students (0.0%)
+  ✗ grades_extract_231009E-T3AE_IEAP-B.csv             | IEAP-B       | 231009E-T3AE   
+     Reason: No matching records in database
+     Match: 0/65 students (0.0%)
+  ✗ grades_extract_240109E-T1AE_EHSS-7A.csv            | EHSS-7A      | 240109E-T1AE   
+     Reason: No matching records in database
+     Match: 0/50 students (0.0%)
+  ✗ grades_extract_240109E-T1AE_EHSS-7B.csv            | EHSS-7B      | 240109E-T1AE   
+     Reason: No matching records in database
+     Match: 0/56 students (0.0%)
+  ✗ grades_extract_240109E-T1AE_EHSS-8A.csv            | EHSS-8A      | 240109E-T1AE   
+     Reason: No matching records in database
+     Match: 0/34 students (0.0%)
+  ✗ grades_extract_240109E-T1AE_EHSS-8B.csv            | EHSS-8B      | 240109E-T1AE   
+     Reason: No matching records in database
+     Match: 0/44 students (0.0%)
+  ✗ grades_extract_240109E-T1AE_EHSS-8C.csv            | EHSS-8C      | 240109E-T1AE   
+     Reason: No matching records in database
+     Match: 0/19 students (0.0%)
+  ✗ grades_extract_240109E-T1AE_IEAP-B.csv             | IEAP-B       | 240109E-T1AE   
+     Reason: No matching records in database
+     Match: 0/137 students (0.0%)
+  ✗ grades_extract_240109E-T1AE_IEAP-P.csv             | IEAP-P       | 240109E-T1AE   
+     Reason: No matching records in database
+     Match: 0/108 students (0.0%)
+  ✗ grades_extract_240205E-T3BE_IEAP-B.csv             | IEAP-B       | 240205E-T3BE   
+     Reason: No matching records in database
+     Match: 0/36 students (0.0%)
+  ✗ grades_extract_240403E-T2AE_EHSS-01.csv            | EHSS-01      | 240403E-T2AE   
+     Reason: Low match rate: 68.6% < 80%
+     Match: 72/105 students (68.6%)
+  ✗ grades_extract_240403E-T2AE_EHSS-02.csv            | EHSS-02      | 240403E-T2AE   
+     Reason: Low match rate: 75.8% < 80%
+     Match: 69/91 students (75.8%)
+  ✗ grades_extract_240403E-T2AE_EHSS-03.csv            | EHSS-03      | 240403E-T2AE   
+     Reason: Low match rate: 73.2% < 80%
+     Match: 71/97 students (73.2%)
+  ✗ grades_extract_240403E-T2AE_EHSS-04.csv            | EHSS-04      | 240403E-T2AE   
+     Reason: Low match rate: 61.8% < 80%
+     Match: 47/105 students (61.8%)
+  ✗ grades_extract_240403E-T2AE_EHSS-05.csv            | EHSS-05      | 240403E-T2AE   
+     Reason: Low match rate: 75.0% < 80%
+     Match: 63/84 students (75.0%)
+  ✗ grades_extract_240403E-T2AE_EHSS-06.csv            | EHSS-06      | 240403E-T2AE   
+     Reason: Low match rate: 58.9% < 80%
+     Match: 63/171 students (58.9%)
+  ✗ grades_extract_240403E-T2AE_EHSS-07.csv            | EHSS-07      | 240403E-T2AE   
+     Reason: No matching records in database
+     Match: 0/21 students (0.0%)
+  ✗ grades_extract_240403E-T2AE_EHSS-07A.csv           | EHSS-07A     | 240403E-T2AE   
+     Reason: No matching records in database
+     Match: 0/21 students (0.0%)
+  ✗ grades_extract_240403E-T2AE_EHSS-07B.csv           | EHSS-07B     | 240403E-T2AE   
+     Reason: No matching records in database
+     Match: 0/22 students (0.0%)
+  ✗ grades_extract_240403E-T2AE_EHSS-07C.csv           | EHSS-07C     | 240403E-T2AE   
+     Reason: No matching records in database
+     Match: 0/22 students (0.0%)
+  ✗ grades_extract_240403E-T2AE_EHSS-08.csv            | EHSS-08      | 240403E-T2AE   
+     Reason: No matching records in database
+     Match: 0/26 students (0.0%)
+  ✗ grades_extract_240403E-T2AE_EHSS-08A.csv           | EHSS-08A     | 240403E-T2AE   
+     Reason: No matching records in database
+     Match: 0/22 students (0.0%)
+  ✗ grades_extract_240403E-T2AE_EHSS-08B.csv           | EHSS-08B     | 240403E-T2AE   
+     Reason: No matching records in database
+     Match: 0/24 students (0.0%)
+  ✗ grades_extract_240403E-T2AE_EHSS-09.csv            | EHSS-09      | 240403E-T2AE   
+     Reason: No matching records in database
+     Match: 0/19 students (0.0%)
+  ✗ grades_extract_240403E-T2AE_EHSS-09A.csv           | EHSS-09A     | 240403E-T2AE   
+     Reason: No matching records in database
+     Match: 0/24 students (0.0%)
+  ✗ grades_extract_240403E-T2AE_EHSS-09B.csv           | EHSS-09B     | 240403E-T2AE   
+     Reason: No matching records in database
+     Match: 0/25 students (0.0%)
+  ✗ grades_extract_240403E-T2AE_EHSS-10.csv            | EHSS-10      | 240403E-T2AE   
+     Reason: Low match rate: 54.3% < 80%
+     Match: 19/35 students (54.3%)
+  ✗ grades_extract_240403E-T2AE_EHSS-11.csv            | EHSS-11      | 240403E-T2AE   
+     Reason: Low match rate: 55.8% < 80%
+     Match: 24/43 students (55.8%)
+  ✗ grades_extract_240403E-T2AE_GESL-01.csv            | GESL-01      | 240403E-T2AE   
+     Reason: Low match rate: 61.0% < 80%
+     Match: 36/59 students (61.0%)
+  ✗ grades_extract_240403E-T2AE_GESL-02.csv            | GESL-02      | 240403E-T2AE   
+     Reason: Low match rate: 48.8% < 80%
+     Match: 21/43 students (48.8%)
+  ✗ grades_extract_240403E-T2AE_GESL-05.csv            | GESL-05      | 240403E-T2AE   
+     Reason: Low match rate: 58.1% < 80%
+     Match: 18/31 students (58.1%)
+  ✗ grades_extract_240403E-T2AE_IEAP-4.csv             | IEAP-4       | 240403E-T2AE   
+     Reason: Low match rate: 74.2% < 80%
+     Match: 66/157 students (74.2%)
+  ✗ grades_extract_240403E-T2AE_IEAP-B.csv             | IEAP-B       | 240403E-T2AE   
+     Reason: No matching records in database
+     Match: 0/132 students (0.0%)
+  ✗ grades_extract_240403E-T2AE_IEAP-P.csv             | IEAP-P       | 240403E-T2AE   
+     Reason: No matching records in database
+     Match: 0/28 students (0.0%)
+  ✗ grades_extract_240708E-T3AE_EHSS-07AB.csv          | EHSS-07AB    | 240708E-T3AE   
+     Reason: No matching records in database
+     Match: 0/38 students (0.0%)
+  ✗ grades_extract_240708E-T3AE_EHSS-07C.csv           | EHSS-07C     | 240708E-T3AE   
+     Reason: No matching records in database
+     Match: 0/18 students (0.0%)
+  ✗ grades_extract_240708E-T3AE_EHSS-08A.csv           | EHSS-08A     | 240708E-T3AE   
+     Reason: No matching records in database
+     Match: 0/32 students (0.0%)
+  ✗ grades_extract_240708E-T3AE_EHSS-08B.csv           | EHSS-08B     | 240708E-T3AE   
+     Reason: No matching records in database
+     Match: 0/28 students (0.0%)
+  ✗ grades_extract_240708E-T3AE_EHSS-09A.csv           | EHSS-09A     | 240708E-T3AE   
+     Reason: No matching records in database
+     Match: 0/21 students (0.0%)
+  ✗ grades_extract_240708E-T3AE_EHSS-09B.csv           | EHSS-09B     | 240708E-T3AE   
+     Reason: No matching records in database
+     Match: 0/19 students (0.0%)
+  ✗ grades_extract_240708E-T3AE_IEAP-2B.csv            | IEAP-2B      | 240708E-T3AE   
+     Reason: No matching records in database
+     Match: 0/21 students (0.0%)
+  ✗ grades_extract_240708E-T3AE_IEAP-4.csv             | IEAP-4       | 240708E-T3AE   
+     Reason: Low match rate: 79.4% < 80%
+     Match: 27/34 students (79.4%)
+  ✗ grades_extract_240708E-T3AE_IEAP-B.csv             | IEAP-B       | 240708E-T3AE   
+     Reason: No matching records in database
+     Match: 0/40 students (0.0%)
+  ✗ grades_extract_240708E-T3AE_IEAP-P.csv             | IEAP-P       | 240708E-T3AE   
+     Reason: No matching records in database
+     Match: 0/11 students (0.0%)
+  ✗ grades_extract_241007E-T4AE_EHSS-07.csv            | EHSS-07      | 241007E-T4AE   
+     Reason: No matching records in database
+     Match: 0/26 students (0.0%)
+  ✗ grades_extract_241007E-T4AE_EHSS-12.csv            | EHSS-12      | 241007E-T4AE   
+     Reason: No matching records in database
+     Match: 0/10 students (0.0%)
+
+================================================================================
