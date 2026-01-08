@@ -36,7 +36,7 @@ def extract_termid_from_filename(filename):
     return None
 
 
-def process_csv_file(csv_path, real_mode=False):
+def process_csv_file(csv_path, real_mode=False, diagnostic=False):
     """
     Process a single CSV file from failed/ folder.
     
@@ -47,6 +47,7 @@ def process_csv_file(csv_path, real_mode=False):
     Args:
         csv_path: Path to the CSV file
         real_mode: If True, execute UPDATE. If False, dry run only.
+        diagnostic: If True, provide detailed breakdown of why records don't match
     
     Returns:
         dict with processing results
@@ -117,29 +118,66 @@ def process_csv_file(csv_path, real_mode=False):
                 
                 if not real_mode:
                     # Dry run: check if records would be found
-                    check_query = f"""
-                        SELECT COUNT(*) as cnt
-                        FROM academiccoursetakers
-                        WHERE classid LIKE '{termid}%'
-                          AND grade = 'IP'
-                          AND ID = '{student_id}'
-                    """
-                    cursor.execute(check_query)
-                    result = cursor.fetchone()
-                    record_count = result[0] if result else 0
                     
-                    if record_count == 0:
+                    if diagnostic:
+                        # Detailed diagnostic: check each condition separately
+                        student_exists_query = f"SELECT COUNT(*) FROM academiccoursetakers WHERE ID = '{student_id}'"
+                        cursor.execute(student_exists_query)
+                        student_exists = cursor.fetchone()[0]
+                        
+                        term_match_query = f"SELECT COUNT(*) FROM academiccoursetakers WHERE ID = '{student_id}' AND classid LIKE '{termid}%'"
+                        cursor.execute(term_match_query)
+                        term_match = cursor.fetchone()[0]
+                        
+                        ip_status_query = f"SELECT COUNT(*) FROM academiccoursetakers WHERE ID = '{student_id}' AND classid LIKE '{termid}%' AND grade = 'IP'"
+                        cursor.execute(ip_status_query)
+                        ip_status = cursor.fetchone()[0]
+                        
+                        if student_exists == 0:
+                            reason = "Student ID not in database"
+                        elif term_match == 0:
+                            reason = "No records for this term"
+                        elif ip_status == 0:
+                            reason = "No IP grade (already updated or different status)"
+                        else:
+                            reason = "Unknown"
+                        
                         not_found_count += 1
                         results['not_found_records'].append({
                             'student_id': student_id,
                             'grade': grade,
                             'termid': termid,
-                            'reason': 'No records matching criteria'
+                            'reason': reason,
+                            'student_exists': student_exists > 0,
+                            'has_term_records': term_match > 0,
+                            'has_ip_grade': ip_status > 0
                         })
-                        logger.warning(f"    ⚠ NOT FOUND: student {student_id} for term {termid}")
+                        logger.warning(f"    ⚠ NOT FOUND: {student_id} | exists: {student_exists > 0} | term: {term_match > 0} | IP: {ip_status > 0} ({reason})")
                     else:
-                        logger.info(f"    ✓ Would update: student {student_id} → {grade} ({record_count} records)")
-                        updated_count += 1
+                        # Simple check: all conditions together
+                        check_query = f"""
+                            SELECT COUNT(*) as cnt
+                            FROM academiccoursetakers
+                            WHERE classid LIKE '{termid}%'
+                              AND grade = 'IP'
+                              AND ID = '{student_id}'
+                        """
+                        cursor.execute(check_query)
+                        result = cursor.fetchone()
+                        record_count = result[0] if result else 0
+                        
+                        if record_count == 0:
+                            not_found_count += 1
+                            results['not_found_records'].append({
+                                'student_id': student_id,
+                                'grade': grade,
+                                'termid': termid,
+                                'reason': 'No records matching criteria'
+                            })
+                            logger.warning(f"    ⚠ NOT FOUND: student {student_id} for term {termid}")
+                        else:
+                            logger.info(f"    ✓ Would update: student {student_id} → {grade} ({record_count} records)")
+                            updated_count += 1
                 else:
                     # Real mode: execute UPDATE
                     cursor.execute(update_query)
@@ -261,12 +299,28 @@ def generate_audit_report(all_results, real_mode, output_file=None):
             report_lines.append(
                 f"  File: {filename}"
             )
-            report_lines.append(
-                f"    Student ID: {record['student_id']:<10} | "
-                f"Grade: {record['grade']:<5} | "
-                f"Term: {record['termid']:<15} | "
-                f"Reason: {record['reason']}"
-            )
+            # Check if this has diagnostic info
+            if 'student_exists' in record:
+                report_lines.append(
+                    f"    Student ID: {record['student_id']:<10} | "
+                    f"Grade: {record['grade']:<5} | "
+                    f"Term: {record['termid']:<15}"
+                )
+                report_lines.append(
+                    f"      Reason: {record['reason']}"
+                )
+                report_lines.append(
+                    f"      Student exists: {record['student_exists']} | "
+                    f"Has term records: {record['has_term_records']} | "
+                    f"Has IP grade: {record['has_ip_grade']}"
+                )
+            else:
+                report_lines.append(
+                    f"    Student ID: {record['student_id']:<10} | "
+                    f"Grade: {record['grade']:<5} | "
+                    f"Term: {record['termid']:<15} | "
+                    f"Reason: {record['reason']}"
+                )
     else:
         report_lines.append("  (none)")
     
@@ -336,6 +390,11 @@ def main():
         type=str,
         help='Save audit report to specified file'
     )
+    parser.add_argument(
+        '--diagnostic',
+        action='store_true',
+        help='Show detailed diagnostic info for why records do not match (slower)'
+    )
     
     args = parser.parse_args()
     
@@ -373,7 +432,7 @@ def main():
     # Process each file
     all_results = []
     for csv_file in csv_files:
-        results = process_csv_file(csv_file, real_mode=real_mode)
+        results = process_csv_file(csv_file, real_mode=real_mode, diagnostic=args.diagnostic)
         all_results.append(results)
         
         # Move successful files to success/ (only in real mode)
